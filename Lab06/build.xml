@@ -1,0 +1,22 @@
+<project name="example" default="compile">
+	<target name="compile" depends="clean">
+		<javac srcdir="."/>
+	</target>
+	<target name="clean">
+		<delete>
+			<fileset dir="." includes="**/*.class"/>
+			<fileset dir="." includes="**/*.*~"/>
+			<fileset dir="." includes="META-INF"/>
+		</delete>
+	</target>
+	<target name="run" depends="compile">
+		<java classpath="."
+			classname = "Driver6"/>
+	</target>
+	<target name="who">
+		<echo message="Michael Meluso and Dave Piccolella"/>
+	</target>
+	<target name="jar" depends="clean">
+		<jar destfile="./lab6.jar" basedir="."/>
+	</target>	
+</project>

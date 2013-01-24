@@ -1,0 +1,16 @@
+Michael Meluso's Results:
+=========================
+Total number of requests in the file: 34,963
+The number of GET requests: 32,756
+The number of POST requests: 2,207
+The total number of bytes served: 5,349,488,375
+The number and percentage of pages producing various status categorizations: 
+	1xx Informational: 0 (0%)
+	2xx Status: 29,819 (85.28%)
+	3xx Redirection: 4,443 (12.71%)
+	4xx Client Error: 701 (2.00%)
+	5xx Server Error: 0 (0%)
+The percentage and number of Windows-based clients: 40.66% (14,216)
+The percentage and number of bad requests: 2.00% (701)
+The percentage and number of clients that are Mozilla-based: 68.83% (24,066)
+The percentage and number of requests from the Googlebot: 7.05% (2,464)

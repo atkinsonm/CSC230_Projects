@@ -1,0 +1,25 @@
+<project name="build" default="compile">
+   <target name="compile" depends = "clean">
+       <javac srcdir="." classpath="." includeantruntime="false" />
+   </target>
+ 
+   <target name="clean">
+      <available file="META-INF" type="dir" property="META-INF.present" value="true"/>
+            <delete dir="META-INF" />
+     <delete>
+         <fileset dir="." includes="**/*.class" />
+         <fileset dir="." includes="**/*~" defaultexcludes="no" />
+     </delete>
+   </target>
+
+   <target name="authors">
+      <echo message="David Piccolella Michael Meluso"/>
+  </target>
+  
+  <target name="run" depends="authors, compile">
+	  <java classname="edu.tcnj.csc230.Driver" classpath="." fork="yes"/>
+  </target>
+  <target name="jar" depends="clean">
+	  <jar destfile="lab9.jar" basedir="."/>
+  </target>
+</project>

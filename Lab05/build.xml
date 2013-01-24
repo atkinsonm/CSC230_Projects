@@ -1,0 +1,31 @@
+<project name = "lab5" basedir = "." default = "run1">
+
+	<target name = "clean">
+		<delete >
+			<fileset dir = "." includes = "**/*.class"/>
+			<fileset dir = "." includes = "*.*~"/>
+		</delete>
+		<delete dir = "META-INF"/>
+	</target>
+
+	<target name = "compile" depends = "clean">
+		<javac srcdir = "." includeantruntime = "false"/>
+	</target>
+	
+	<target name = "run1" depends = "compile">
+        	<java classname = "Activity1" classpath = "." fork = "yes" />
+    	</target>
+	
+	<target name = "run2" depends = "compile">
+		<java classname = "Activity2" classpath = "." fork = "yes" />
+    	</target>
+	
+	<target name = "run3" depends = "compile">
+		<java classname = "Activity3" classpath = "." fork = "yes" />
+    	</target>
+	
+	<target name = "who">
+		<echo message = "Warren Smith and Mike Meluso"/>
+	</target>
+	
+</project>

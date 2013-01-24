@@ -1,0 +1,24 @@
+<project name="build" default="compile">
+	<target name="compile" depends="clean">
+		<javac srcdir=".">
+		<include name = "**/*.java"/>
+		</javac>
+	</target>
+	<target name="clean">
+		<delete>
+			<fileset dir="." includes="**/*.class"/>
+			<fileset dir="." includes="**/*.txt"/>
+			<fileset dir="." includes="META-INF"/>
+		</delete>
+	</target>
+	<target name="run" depends="compile">
+		<java classname = "tcnj.melusom2.Driver" classpath = ".">
+		</java>
+	</target>
+	<target name="who">
+		<echo message="Michael Meluso"/>
+	</target>
+	<target name="jar" depends="clean">
+		<jar destfile="melusom2.jar" basedir="."/>
+	</target>	
+</project>

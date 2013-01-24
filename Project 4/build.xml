@@ -1,0 +1,27 @@
+<project name="build" default="compile">
+   <target name="compile">
+       <javac srcdir="." classpath="." includeantruntime="false" />
+   </target>
+ 
+   <target name="clean">
+      <available file="META-INF" type="dir" property="META-INF.present" value="true"/>
+            <delete dir="META-INF" />
+     <delete>
+         <fileset dir="." includes="**/*.class" />
+         <fileset dir="." includes="**/*~" defaultexcludes="no" />
+		 <fileset dir="." includes="output.txt"/>
+     </delete>
+   </target>
+
+   <target name="who">
+      <echo message="Michael Meluso Project 4"/>
+  </target>
+  
+  <target name="run" depends="compile, who">
+	  <java classname="tcnj.edu.Driver" classpath="." fork="false"/> 
+  </target>
+  
+  <target name="jar" depends="clean">
+	  <jar destfile="melusom2.jar" basedir="." excludes = "*.txt, *.tsv"/>
+  </target>
+</project>
