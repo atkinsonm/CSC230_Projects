@@ -5,7 +5,7 @@ Project 4
 UndirectedGraph Class
 
 Implements an undirtected graph by creating 
-a boolean array asadjacency matrix.
+a boolean array as an adjacency matrix.
 **********************************************/
 
 package tcnj.edu;
