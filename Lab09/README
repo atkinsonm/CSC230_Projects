@@ -1,2 +1,0 @@
-Implements a test graph using file input, performs a BFS and DFS, produces an adjacency matrix and a
-minimum spanning tree.

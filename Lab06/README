@@ -1,2 +1,0 @@
-Implements a bubble sort, insertion sort, selection sort, merge sort, and quick sort
-on a sample of People objects to compare the sorting algorithms and time complexities.
