@@ -1,5 +1,33 @@
 This repository contains projects completed while enrolled in Computer Science II: Data Structures (CSC230). 
 Many of these projects involve implementation if a certain data structure to solve a real world issue.
 
-Instantiates a Reader object which inputs a file with website URLS and 
-calculates and prints the number of URLS with certain domain types
+Websites: Instantiates a Reader object which inputs a file with website URLS and 
+          calculates and prints the number of URLS with certain domain types
+          
+Interest Rates: Imports data on federal interest rates and finds the high, low, and determines if certain data
+                exist in the list.
+                
+Simple Recursion Projects: Three activities to test recursive statements:
+
+                          Activity1: Draw stars based on user input
+                          Activity2: Determine the number of vowels in a string
+                          Activity3: Determine the greatest common denominator of two integers
+                          
+Sorting Algorithms: Implements a bubble sort, insertion sort, selection sort, merge sort, and quick sort
+                    on a sample of People objects to compare the sorting algorithms and time complexities.
+                    
+Decision Tree: Implements a decision tree to determine if the user is pregnant 
+                (with a test approach, not serious or medically sound)
+                
+Minimum Spanning Tree: Implements a test graph using file input, performs a BFS and DFS, produces an adjacency matrix 
+                        and a minimum spanning tree.
+                        
+Server Log Processing: Processes a server log, creates objects for each log entry, and outputs information about the log.
+
+Print Manager: Simulates a variety of print jos and manages the distribution of those jobs to several
+                printers based on certain criteria and the current state of the printers.
+                
+Hashing and DNS Queries: Makes DNS queries and hashes results
+
+Marvel Characters: Creates an undirected graph which allows a user to search for and view relationships
+                    between characters in the Marvel universe.
