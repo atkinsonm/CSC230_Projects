@@ -11,7 +11,7 @@
 	</target>
 	<target name="run" depends="compile">
 		<java classpath="."
-			classname = "Driver6"/>
+			classname = "Driver"/>
 	</target>
 	<target name="who">
 		<echo message="Michael Meluso and Dave Piccolella"/>
